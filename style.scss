@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic-ext');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #3e3b4a;
+
+    .header{        
+        .wrapper{
+            max-width: 1024px;
+            height: 204px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu{
+                margin: 0;
+                padding: 0;
+                .menu-btn{                    
+                    a{
+                        color: #898691;
+                        letter-spacing: 3px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        font-weight: bold;
+                        line-height: 19px; 
+                        display: block; 
+                        padding-left: 32px;  
+                        position: relative;                        
+                        
+                        .burger-line{
+                            width: 22px;
+                            height: 3px;
+                            background: #898691;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        .line-two{
+                            top:8px;
+                        }
+                        
+                        .line-three{
+                            top: 16px;
+                        }                                                  
+                    }
+                }
+            }
+
+            .logo-block{
+                .logo{
+                    color: #898691;
+                    text-align: center;
+                    font-size: 0.8125em;
+
+                    span{
+                    color: #fff;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 3.7em;
+                    }
+                }
+            }
+
+            .header-search{
+                a{
+                    display: block;
+                    color: #898691;
+                    letter-spacing: 3px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 22px; 
+                    padding-right: 33px;
+                    background: url(image/search-i.png) no-repeat right center;                   
+                }
+            }
+        }
+    }
+
+    .content{
+
+        .wrapper{
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+/*названия блоков*/
+            .name-block{
+                letter-spacing: 4px;
+                color: #ffc7b0;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;                
+            }
+/*Кнопки блоков*/
+            .button, .review-button{
+                border: 3px solid #ffe18f;    
+                background: transparent;     
+                padding: 0;                 
+                
+                a{
+                    display: block;
+                    padding: 10px 8px;     
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.25em;
+                    font-weight: 700;
+    
+                    &:hover{
+                        background: #ffe18f; 
+                    }
+    
+                    &:active{
+                        background: #fad267;
+                    }
+                }
+            }            
+/*------------------------*/            
+            .home-block{
+                width: 100%;
+                background: url(image/bg-home.png) no-repeat center center;
+                background-size: cover;                
+
+                .home-block-holder{
+                    padding: 40px;
+
+                    .home-title{
+                        font-size: 4.5em;
+                        font-weight: 700;
+                        color: #fff;
+                        line-height: 1;
+                        margin: 27px 0 0 0 ;                    
+                    }
+    
+                    .home-descriptions{
+                        width: 35%;
+                        font-size: 2.25em;
+                        font-weight: 400;
+                        color:#fff;
+                        margin: 15px 0 0 0 ; 
+                    }
+    
+                    .button{
+                        margin-top: 75px;
+                    }                    
+                }                
+            }
+
+            .accessories{
+                flex-basis: 61%;
+                background: url(image/bd-peak.png) no-repeat right top #71b6c3;                
+                color: #fff;
+                margin-top: 20px;
+                margin-right: 2%;
+                
+                .accessories-holder{
+                    margin: 40px;
+                    
+                    .accessories-title{
+                        color: #fff;
+                        font-size: 3em;
+                        font-weight: bold;
+                        margin: 20px 0 0 0;
+                    }
+
+                    .accessories-descriptions{
+                        width: 35%;
+                        margin: 20px 0 0 0;
+                        font-size: 1.5em;
+                        font-weight: 400;
+                    }
+
+                    .button{
+                        margin-top: 200px;
+                    }
+                }
+            }
+
+            .accessories-registration{
+                flex-basis: 37%;
+                font-family: 'Times New Roman', Times, serif;
+                background: #eb7b61;
+                color: #fff;
+                text-align: center;
+                margin-top: 20px;
+
+                .accessories-registration-title{
+                    font-size: 3em;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 77px;
+
+                    &::after{
+                        content: '...';
+                        display: block;
+                        line-height: 1em;
+                    }                   
+                }
+
+                .accessories-registration-descriptions{
+                    font-size: 1.5em;
+                    padding: 0 5% 0 5%;                    
+                }
+
+                .mail-block{
+                    margin: 42px 0 0 0;
+
+                    input{
+                        background: transparent;
+                        color: #ffd9d1;
+                        border: 3px solid #ffd9d1;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1.25em;
+                        text-align: center;
+                        font-weight: 600;
+                        line-height: 1.75em;
+                        width: 75%;    
+                    }
+                }
+
+                .button-mail{
+                    width: 76%;
+                    margin: 20px auto 30px auto;  
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        font-size: 1.25em;
+                        line-height: 2.1em; 
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 600;
+                        text-align: center;
+                        background: #66689c;
+                        color: #fff;                                              
+                    }                   
+                }
+
+                .accessories-registration-text{
+                    padding: 0 5% 0 5%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 0.875em;
+                    font-weight: 200;                    
+                }
+            }
+            
+            .cameras-review{
+                flex-basis: 25%;
+                margin-right: 2%;
+                margin-top: 20px;
+                background: url(image/bg-camerass-rew.png) no-repeat center center;
+                background-size: cover;
+                text-align: center;
+
+                .cameras-review-holder{
+                    margin: 34px 10px 40px 10px;
+
+                    .cameras-review-title{
+                        color: #fff;
+                        font-size: 2.25em;
+                        margin: 145px 0 0 0;    
+                        font-weight: 600;
+                    }
+
+                    .review-button{
+                        margin-top: 120px;
+                    }
+                }
+               
+            }
+
+            .sound-review{
+                flex-basis: 25%;
+                margin-right: 2%;
+                margin-top: 20px; 
+                background: url(image/bg-sound.png) no-repeat center center;
+                background-size: cover;
+                text-align: center;
+
+                .sound-review-holder{
+                    margin: 34px 10px 38px 10px;
+                                        
+                    .sound-review-title{
+                        color: #fff;
+                        font-size: 2.25em;
+                        margin: 136px 0 0 0; 
+                        font-weight: 600;
+                    }
+
+                    .review-button{
+                        margin: 90px 0 0 0;
+                    }
+                }
+            }
+
+            .cameras{
+                flex-basis: 46%;
+                margin-top: 20px; 
+                background: url(image/bg-camerass.png) no-repeat right bottom  #1ab467;
+                
+                .cameras-holder{
+                    margin: 40px;
+
+                    .cameras-title{
+                        color: #fff;
+                        font-size: 2.25em;                           
+                        font-weight: 600;
+                        margin: 15px 0 0 0; 
+                    }
+
+                    .cameras-descriptions{
+                        width: 53%;
+                        color:#fff;
+                        font-size: 20px;                        
+                        font-weight: 400;
+                        margin: 20px 0 0 0;
+                    }
+
+                    .button{
+                        margin: 184px 0 0 0;
+                    }
+                }
+
+            }
+
+            
+        }
+    }
+
+    .footer{
+
+        .wrapper{
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;      
+            
+            .copyright{
+                width: 50%;
+                padding: 57px 0 68px;
+                color: #898691;
+                font-size: 14px;                
+            }
+
+            .social{
+                width: 50%;
+                text-align: right;
+                padding: 57px 0 68px;
+                
+                .facebook{
+                   margin-left: 23px; 
+                }
+            }
+        }
+    }
+}
+
+/*---MEDIA QUERIES -------------------------*/
+@media screen and (max-width:1024px) {
+    .menu-btn{
+        margin-left: 10px;
+    }
+
+    .header-search{
+        margin-right: 20px;
+    }
+
+    body .footer .wrapper .social{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:768px){
+    body .content .wrapper .home-block .home-block-holder .home-title{
+        font-size: 3.5em;
+    }
+
+    body .content .wrapper .home-block .home-block-holder .home-descriptions{
+        font-size: 1.25em;
+    }
+
+    body .content .wrapper .button a,
+    body .content .wrapper .review-button a{
+        font-size: 1em;
+    }
+
+    body .content .wrapper .accessories .accessories-holder .accessories-title{
+        font-size: 2.5em;
+    }
+
+    body .content .wrapper .accessories .accessories-holder .accessories-descriptions{
+        font-size: 1.1em;
+        width: 45%;
+    }
+
+    body .content .wrapper .accessories-registration .accessories-registration-title{
+        font-size: 2.5em;
+    }
+
+    body .content .wrapper .accessories-registration .accessories-registration-descriptions{
+        font-size: 1.1em;
+    }
+
+    body .content .wrapper .accessories-registration .mail-block input{
+        font-size: 1.1em;
+    }
+
+    body .content .wrapper .accessories-registration .button-mail a{
+        font-size: 1.1em;
+    }
+
+    body .content .wrapper .accessories-registration .accessories-registration-text{
+        font-size: 0.8em;
+    }
+
+    body .content .wrapper .cameras-review{
+        flex-basis: 49%;
+    }
+
+    body .content .wrapper .sound-review{
+        flex-basis: 49%;
+        margin-right: 0; 
+    }
+
+    body .content .wrapper .cameras{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:620px){
+    body .content .wrapper .accessories{
+        background-size: contain;
+    }
+}
+
+@media (max-width:400px){   
+
+    body .header .wrapper{
+        height: 100px;
+    }
+    
+    body .header .wrapper .menu .menu-btn a{
+        font-size: 0;
+    }
+
+    body .header .wrapper .header-search a{
+        font-size: 0;        
+    }
+
+    body .header .wrapper{
+        font-size: 0.7em;
+    }
+
+    body .content .wrapper{
+        flex-direction: column;
+    }
+
+    body .content .wrapper .home-block .home-block-holder .home-title{
+        font-size: 3em;
+    }
+
+    body .content .wrapper .home-block .home-block-holder .home-descriptions{
+        width: 100%;
+    }
+
+    body .content .wrapper .accessories .accessories-holder .accessories-descriptions{
+        width: 100%;
+    }
+
+    body .content .wrapper .accessories{
+        margin-right: 0;
+    }
+
+    body .content .wrapper .accessories-registration .accessories-registration-title{
+        margin-top: 45px;
+    }
+
+    body .content .wrapper .accessories-registration .accessories-registration-text{
+        margin-bottom: 30px;
+    }
+
+    body .content .wrapper{
+        text-align: center;
+    }
+
+    body .content .wrapper .cameras .cameras-holder .cameras-descriptions{
+        width: 100%;
+    }
+
+    body .footer .wrapper .copyright,
+    body .footer .wrapper .social{
+        padding: 37px 0 48px;
+    }
+}
+
+@media (max-width:320px){
+    .wrapper{
+        width: 320px;
+    }
+}
+
+
+
+
