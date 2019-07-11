@@ -475,9 +475,4 @@ body .footer .wrapper .social .facebook {
   }
 }
 
-@media (max-width: 320px) {
-  .wrapper {
-    width: 320px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
